@@ -283,8 +283,14 @@ Invoice text:
 \"\"\"{full_text}\"\"\""""
         print("🤖 Sending to Gemini for structured invoice extraction...")
 
+
+        # Duu to high cost of Gemini-2.5, using Gemini-1.5 for now
+        # response = client.models.generate_content(
+        #     model="gemini-2.5-flash",
+        #     contents=prompt
+        # )
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-2.0-flash",
             contents=prompt
         )
 
