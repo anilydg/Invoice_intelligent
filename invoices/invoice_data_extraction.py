@@ -14,7 +14,7 @@ import google.genai as genai  # ✅ new official SDK
 load_dotenv()
 print("✅ Loaded environment variables for PDF parsing.")
 
-pdf_path = r"C:\NIA\NIA 2W RETAIL ESTIMATE & INVOICE\NIA 2W RETAIL ESTIMATE & INVOICE\INVOICE\CSPBGQV4K - Final Repair Invoice.pdf"
+# pdf_path = r"C:\NIA\NIA 2W RETAIL ESTIMATE & INVOICE\NIA 2W RETAIL ESTIMATE & INVOICE\INVOICE\CSPBGQV4K - Final Repair Invoice.pdf"
 
 
 # --------------------------------------------------------
@@ -220,8 +220,8 @@ class PDFParser:
 # Run the script and pass to JSON converter
 # --------------------------------------------------------
 
-parser = PDFParser()
-result, total = parser.read_pdf_by_pages(pdf_path)
+# parser = PDFParser()
+# result, total = parser.read_pdf_by_pages()
 
 
 
